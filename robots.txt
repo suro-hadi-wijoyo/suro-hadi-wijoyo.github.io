@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://5224-m-s-215m7koau1uk4-b.us-central1-1.prod.colab.dev/sitemap.xml
+Sitemap: https://59860-m-s-4ktk2ptjxvsk-a.asia-east1-0.prod.colab.dev/sitemap.xml
