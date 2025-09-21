@@ -1,10 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://59860-m-s-4ktk2ptjxvsk-a.asia-east1-0.prod.colab.dev/index.md/</loc>
-        <lastmod>2025-09-15</lastmod>
+        <loc>https://www.shwijoyo.com/</loc>
+        <lastmod>2025-09-21</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://www.shwijoyo.com/tentang/</loc>
+        <lastmod>2025-09-21</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.shwijoyo.com/portofolio/</loc>
+        <lastmod>2025-09-21</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.shwijoyo.com/portofolio/personal/</loc>
+        <lastmod>2025-09-21</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.shwijoyo.com/portofolio/personal/kaela-sauli/</loc>
+        <lastmod>2025-09-21</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
     </url>
 </urlset>
 
