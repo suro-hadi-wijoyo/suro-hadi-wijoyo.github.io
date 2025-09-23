@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://46560-m-s-wqy62l0a2akj-c.us-east1-0.prod.colab.dev/sitemap.xml
+Sitemap: https://www.shwijoyo.com/sitemap.xml
