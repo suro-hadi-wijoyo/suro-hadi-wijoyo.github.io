@@ -2,392 +2,537 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suro Hadi Wijoyo - Content Creator, Digital Marketer & Fullstack Developer</title>
-  <meta name="description" content="Saya membantu bisnis Anda tumbuh dengan solusi digital kreatif dan efektif. Mulai dari pembuatan website hingga strategi pemasaran digital.">
+    <title>SH Wijoyo - Jasa Pembuatan Website Super Murah</title>
+    <meta name="Mulai dari Rp 49.900 saja! Kami buatkan website modern, cepat, dan SEO friendly untuk bisnis Anda.">
+    
+    <meta property="og:title" content="SH Wijoyo - Jasa Pembuatan Website Super Murah">
+    <meta property="og:description" content="Mulai dari Rp 49.900 saja! Kami buatkan website modern, cepat, dan SEO friendly untuk bisnis Anda.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.shwijoyo.com/">
+    <meta property="og:site_name" content="SH Wijoyo">
+    <meta property="og:locale" content="id">
+    <meta property="og:image" content="https://cdn.jsdelivr.net/gh/suro-hadi-wijoyo/suro-hadi-wijoyo.github.io@main/assets/img/logo.webp">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SH Wijoyo - Jasa Pembuatan Website Super Murah">
+    <meta name="twitter:description" content="Mulai dari Rp 49.900 saja! Kami buatkan website modern, cepat, dan SEO friendly untuk bisnis Anda.">
+    <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/suro-hadi-wijoyo/suro-hadi-wijoyo.github.io@main/assets/img/logo.webp">
 
-  <link rel="canonical" href="https://www.shwijoyo.com/">
-
-  <!-- Robots (SEO Control) -->
-  
-    <meta name="robots" content="index, follow">
-  
-  
-
-  <!-- Open Graph (Facebook, LinkedIn, WhatsApp, dsb.) -->
-  <meta property="og:title" content="Suro Hadi Wijoyo - Content Creator, Digital Marketer & Fullstack Developer">
-  <meta property="og:description" content="Saya membantu bisnis Anda tumbuh dengan solusi digital kreatif dan efektif. Mulai dari pembuatan website hingga strategi pemasaran digital.">
-  <meta property="og:image" content="https://cdn.jsdelivr.net/gh/suro-hadi-wijoyo/suro-hadi-wijoyo.github.io@main/assets/img/logo.webp">
-  <meta property="og:url" content="https://www.shwijoyo.com/">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="SH Wijoyo">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Suro Hadi Wijoyo - Content Creator, Digital Marketer & Fullstack Developer">
-  <meta name="twitter:description" content="Saya membantu bisnis Anda tumbuh dengan solusi digital kreatif dan efektif. Mulai dari pembuatan website hingga strategi pemasaran digital.">
-  <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/suro-hadi-wijoyo/suro-hadi-wijoyo.github.io@main/assets/img/logo.webp">
-  <meta name="twitter:url" content="https://www.shwijoyo.com/">
-
-  <!-- Favicon & Icons -->
-  <link rel="icon" href="https://www.shwijoyo.com/assets/img/favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" href="https://www.shwijoyo.com/assets/img/apple-touch-icon.png">
-  <link rel="manifest" href="https://www.shwijoyo.com/site.webmanifest">
-  
+    
+    <link rel="canonical" href="https://www.shwijoyo.com/">
+    <link rel="icon" type="image/x-icon" href="https://www.shwijoyo.com/assets/img/favicon.ico">
+     <script type="application/ld+json">
+     
+     </script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Nunito:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <style>
-        body {
-            font-family: 'Nunito', sans-serif;
-            scroll-behavior: smooth;
+        .hamburger-line {
+            transition: all 0.3s ease;
         }
-        h1, h2, h3, h4 {
-            font-family: 'Montserrat', sans-serif;
+        .hamburger-active > span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
         }
-        .animate-float {
-            animation: float 3s ease-in-out infinite;
+        .hamburger-active > span:nth-child(2) {
+            opacity: 0;
         }
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-15px); }
-            100% { transform: translateY(0px); }
+        .hamburger-active > span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -8px);
         }
-        .progress-bar {
-            transition: width 1.5s ease-in-out;
+        .card-hover {
+            transition: all 0.3s ease;
         }
         .card-hover:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
         }
-        .fade-in {
-            animation: fadeIn 1s ease-in;
+        .btn-hover {
+            transition: all 0.3s ease;
         }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+        .btn-hover:hover {
+            transform: scale(1.05);
         }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-700">
-    <!-- Navigation -->
-    <nav class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <div class="flex items-center">
-                    <a href="#" class="flex-shrink-0 flex items-center">
-                        <span class="text-blue-600 font-bold text-xl">SHW</span>
-                    </a>
-                </div>
-                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
-                    <a href="https://www.shwijoyo.com" class="text-blue-600 px-3 py-2 font-medium">Beranda</a>
-                    <a href="https://www.shwijoyo.com/tentang/" class="text-gray-700 hover:text-blue-600 px-3 py-2 font-medium">Tentang</a>
-                    <a href="https://www.shwijoyo.com/portofolio/" class="text-gray-700 hover:text-blue-600 px-3 py-2 font-medium">Portfolio</a>
-                    <a href="#blog" class="text-gray-700 hover:text-blue-600 px-3 py-2 font-medium">Blog</a>
-                    <a href="#shop" class="text-gray-700 hover:text-blue-600 px-3 py-2 font-medium">Produk</a>
-                    <a href="#contact" class="text-gray-700 hover:text-blue-600 px-3 py-2 font-medium">Kontak</a>
-                </div>
-                <div class="-mr-2 flex items-center md:hidden">
-                    <button type="button" id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-blue-600 focus:outline-none">
-                        <i class="fas fa-bars text-xl"></i>
-                    </button>
-                </div>
+<body class="font-sans bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <h1 class="text-2xl font-bold text-indigo-600">SH Wijoyo</h1>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-indigo-600 font-medium">Beranda</a>
+                <a href="#layanan" class="text-gray-700 hover:text-indigo-600 font-medium">Layanan</a>
+                <a href="#tentang" class="text-gray-700 hover:text-indigo-600 font-medium">Tentang Kami</a>
+                <a href="#portofolio" class="text-gray-700 hover:text-indigo-600 font-medium">Portofolio</a>
+                <a href="#kontak" class="text-gray-700 hover:text-indigo-600 font-medium">Kontak</a>
+            </div>
+            <button id="hamburger" class="md:hidden focus:outline-none">
+                <span class="hamburger-line block w-6 h-0.5 bg-gray-700 mb-1.5"></span>
+                <span class="hamburger-line block w-6 h-0.5 bg-gray-700 mb-1.5"></span>
+                <span class="hamburger-line block w-6 h-0.5 bg-gray-700"></span>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white py-4 px-4 shadow-lg">
+            <div class="flex flex-col space-y-4">
+                <a href="#home" class="text-indigo-600 font-medium">Beranda</a>
+                <a href="#layanan" class="text-gray-700 hover:text-indigo-600 font-medium">Layanan</a>
+                <a href="#tentang" class="text-gray-700 hover:text-indigo-600 font-medium">Tentang Kami</a>
+                <a href="#portofolio" class="text-gray-700 hover:text-indigo-600 font-medium">Portofolio</a>
+                <a href="#kontak" class="text-gray-700 hover:text-indigo-600 font-medium">Kontak</a>
             </div>
         </div>
-        <!-- Mobile menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="#home" class="block px-3 py-2 text-blue-600 font-medium">Home</a>
-                <a href="#about" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Tentang</a>
-                <a href="#services" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Layanan</a>
-                <a href="#portfolio" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Portfolio</a>
-                <a href="#blog" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Blog</a>
-                <a href="#shop" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Produk</a>
-                <a href="#contact" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Kontak</a>
+    </header>
+    <!-- Hero Section -->
+    <section id="home" class="py-20 bg-gradient-to-r from-indigo-500 to-purple-600 text-white">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Website Profesional <span class="text-yellow-300">Harga Super Terjangkau</span></h1>
+                <p class="text-xl mb-8">Mulai dari Rp 49.900 saja! Kami buatkan website modern, cepat, dan SEO friendly untuk bisnis Anda.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="https://www.shwijoyo.com/layanan/" class="btn-hover bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-8 rounded-full shadow-lg text-center">Lihat paket</a>
+                    <a href="https://www.shwijoyo.com/layanan/" class="btn-hover bg-transparent hover:bg-white hover:text-indigo-600 border-2 border-white text-white font-bold py-3 px-8 rounded-full text-center">Konsultasi</a>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <img src="http://static.photos/technology/1024x576/42" alt="Website Modern" class="rounded-lg shadow-2xl">
             </div>
         </div>
-    </nav>
-
-<!-- Hero Section -->
-    <section id="home" class="bg-gradient-to-r from-blue-50 to-gray-50 py-16 md:py-24">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2 mb-10 md:mb-0 fade-in">
-                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Suro Hadi Wijoyo</h1>
-                    <h2 class="text-2xl md:text-3xl text-blue-600 mb-6">Content Creator, Digital Marketer & Fullstack Developer</h2>
-                    <p class="text-gray-600 mb-8 text-lg">Saya siap bantu bisnis kamu berkembang dengan solusi digital yang kreatif dan gampang dijalankan, mulai dari bikin website sampai strategi pemasaran online.</p>
-                    <div class="flex space-x-4">
-                        <a href="/kontak/" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition duration-300 transform hover:scale-105 shadow-md">Hubungi Saya</a>
-                        <a href="/portfolio/" class="border border-blue-600 text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-lg font-medium transition duration-300">Lihat Portfolio</a>
+    </section>
+    
+    <!-- Layanan Section -->
+<section id="layanan" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Paket Layanan Kami</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Pilih paket yang sesuai dengan kebutuhan bisnis Anda. Semua paket sudah termasuk domain dan hosting!</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Paket Basic -->
+                <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
+                    <div class="px-6 py-8">
+                        <div class="text-center mb-6">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">Paket Basic</h3>
+                            <div class="justify-center items-baseline">
+                                <span class="text-4xl font-bold text-indigo-600">Rp 49.900</span><br />
+                                <span class="text-xl text-gray-500 line-through">Rp 130.000</span>
+                            </div>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                        
+                        <li class="flex items-center">
+                                <i data-feather="check" class="text-green-500 mr-2"></i>
+                                <span>Aktif Selamanya</span>
+                            </li>
+                        
+                        <li class="flex items-center">
+                                <i data-feather="check" class="text-green-500 mr-2"></i>
+                                <span>5 Halaman Utama</span>
+                            </li>
+                        
+                        <li class="flex items-center">
+                                <i data-feather="check" class="text-green-500 mr-2"></i>
+                                <span>Desain Responsif</span>
+                            </li>
+                        
+                        <li class="flex items-center">
+                                <i data-feather="check" class="text-green-500 mr-2"></i>
+                                <span>Embed Gmap</span>
+                            </li>
+                        
+                            
+                        </ul>
+                        <a href="https://wa.me/6287848385367?text=Hallo%2C%20saya%20ingin%20pesan%20paket%20basic." target="_blank" class="btn-hover block w-full bg-indigo-100 hover:bg-indigo-200 text-indigo-700 font-bold py-3 px-4 rounded-lg text-center">Pilih Paket</a>
                     </div>
                 </div>
-                <div class="md:w-1/2 flex justify-center animate-float">
-                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Suro Hadi Wijoyo" class="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover shadow-xl border-4 border-white">
+
+                <!-- Paket Professional -->
+                <div class="card-hover bg-white rounded-xl shadow-xl overflow-hidden border-2 border-indigo-500 transform scale-105">
+                    <div class="px-6 py-8">
+                        <div class="text-center mb-6">
+                            <div class="bg-indigo-100 text-indigo-800 text-xs font-semibold px-3 py-1 rounded-full inline-block mb-3">POPULER</div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">Paket Professional</h3>
+                            <div class="justify-center items-baseline">
+                                <span class="text-4xl font-bold text-indigo-600">Rp 149.900</span><br />
+                                <span class="text-xl text-gray-500 line-through">Rp 530.000</span>
+                            </div>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            
+                        <li class="flex items-center">
+                                <i data-feather="check" class="text-green-500 mr-2"></i>
+                                <span>Aktif Selamanya</span>
+                            </li>
+                        
+                        <li class="flex items-center">
+                                <i data-feather="check" class="text-green-500 mr-2"></i>
+                                <span>Unlimited Halaman</span>
+                            </li>
+                        
+                        <li class="flex items-center">
+                                <i data-feather="check" class="text-green-500 mr-2"></i>
+                                <span>Desain Custom</span>
+                            </li>
+                        
+                        <li class="flex items-center">
+                                <i data-feather="check" class="text-green-500 mr-2"></i>
+                                <span>Domain & Hosting 1 Tahun</span>
+                            </li>
+                        
+                        <li class="flex items-center">
+                                <i data-feather="check" class="text-green-500 mr-2"></i>
+                                <span>CMS tersedia</span>
+                            </li>
+                        
+                        <li class="flex items-center">
+                                <i data-feather="check" class="text-green-500 mr-2"></i>
+                                <span>SEO basic</span>
+                            </li>
+                        
+                        </ul>
+                        <a href="https://wa.me/6287848385367?text=Hallo%2C%20saya%20ingin%20pesan%20paket%20profesional." target="_blank" class="btn-hover block w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-4 rounded-lg text-center">Pilih Paket</a>
+                    </div>
+                </div>
+
+                <!-- Paket Premium -->
+                <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
+                    <div class="px-6 py-8">
+                        <div class="text-center mb-6">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">Paket Premium</h3>
+                            <div class="justify-center items-baseline">
+                                <span class="text-4xl font-bold text-indigo-600">Rp 1.299.000</span><br />
+                                <span class="text-xl text-gray-500 line-through">Rp 2.190.000</span>
+                            </div>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            
+                        <li class="flex items-center">
+                                <i data-feather="check" class="text-green-500 mr-2"></i>
+                                <span>Aktif Selamanya</span>
+                            </li>
+                        
+                        <li class="flex items-center">
+                                <i data-feather="check" class="text-green-500 mr-2"></i>
+                                <span>Halaman Unlimited</span>
+                            </li>
+                        
+                        <li class="flex items-center">
+                                <i data-feather="check" class="text-green-500 mr-2"></i>
+                                <span>Desain Premium</span>
+                            </li>
+                        
+                        <li class="flex items-center">
+                                <i data-feather="check" class="text-green-500 mr-2"></i>
+                                <span>Domain & Hosting 1 Tahun</span>
+                            </li>
+                        
+                        <li class="flex items-center">
+                                <i data-feather="check" class="text-green-500 mr-2"></i>
+                                <span>CMS Lengkap</span>
+                            </li>
+                        
+                        <li class="flex items-center">
+                                <i data-feather="check" class="text-green-500 mr-2"></i>
+                                <span>SEO Advanced</span>
+                            </li>
+                        
+                        <li class="flex items-center">
+                                <i data-feather="check" class="text-green-500 mr-2"></i>
+                                <span>Fitur E-commerced/blog</span>
+                            </li>
+                        
+                        </ul>
+                        <a href="https://wa.me/6287848385367?text=Hallo%2C%20saya%20ingin%20pesan%20paket%20premium." target="_blank" class="btn-hover block w-full bg-indigo-100 hover:bg-indigo-200 text-indigo-700 font-bold py-3 px-4 rounded-lg text-center">Pilih Paket</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Us Section -->
+    <section id="tentang" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Tentang Kami</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Mengenal lebih dekat SH Wijoyo dan visi misi kami</p>
+            </div>
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="http://static.photos/office/640x360/10" alt="Tentang Kami" class="rounded-lg shadow-xl">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Siapa Kami?</h3>
+                    <p class="text-gray-600 mb-6">SH Wijoyo adalah perusahaan jasa pembuatan website profesional yang berfokus pada penyediaan solusi digital dengan harga terjangkau. Kami membantu UMKM dan startup untuk memiliki website berkualitas tanpa menguras anggaran.</p>
+                    
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Visi Kami</h3>
+                    <p class="text-gray-600 mb-6">"Menjadi mitra terpercaya dalam transformasi digital bagi semua kalangan bisnis dengan solusi teknologi yang terjangkau dan berkualitas."</p>
+                    
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Misi Kami</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-indigo-500 mr-2 mt-1"></i>
+                            <span>Menyediakan layanan pembuatan website dengan harga kompetitif</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-indigo-500 mr-2 mt-1"></i>
+                            <span>Memberikan solusi digital yang sesuai kebutuhan bisnis klien</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-indigo-500 mr-2 mt-1"></i>
+                            <span>Mendukung pertumbuhan UMKM melalui teknologi digital</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-16 bg-white">
+<div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Tim Kami</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Profesional berpengalaman di bidang pengembangan web dan digital marketing</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Team 1 -->
+                <div class="bg-gray-50 rounded-xl p-6 text-center">
+                    <img src="http://static.photos/people/200x200/20" alt="CEO" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Suro Hadi Wijoyo</h3>
+                    <p class="text-indigo-600 font-medium mb-4">Founder & Web programmer</p>
+                    <p class="text-gray-600">Pengembang web dengan pengalaman lebih dari 8 tahun di industri digital.</p>
+                </div>
+                <!-- Team 2 -->
+                <div class="bg-gray-50 rounded-xl p-6 text-center">
+                    <img src="http://static.photos/people/200x200/21" alt="Designer" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Dewi Lestari</h3>
+                    <p class="text-indigo-600 font-medium mb-4">Admin & Social media spesialis</p>
+                    <p class="text-gray-600">Spesialis dalam komunikasi dan relasi.</p>
+                </div>
+                <!-- Team 3 -->
+                <div class="bg-gray-50 rounded-xl p-6 text-center">
+                    <img src="http://static.photos/people/200x200/22" alt="Developer" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Komeng</h3>
+                    <p class="text-indigo-600 font-medium mb-4">Emosional support</p>
+                    <p class="text-gray-600">Ahli dalam mood booster.</p>
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- About Section -->
-    <section id="about" class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-800 mb-4">Tentang Saya</h2>
-                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+    <!-- Testimoni Section -->
+<section id="testimoni" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Apa Kata Klien Kami</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Testimoni dari klien yang sudah menggunakan jasa pembuatan website kami</p>
             </div>
-            
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center">
-                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Suro Hadi Wijoyo" class="rounded-lg w-64 h-64 object-cover shadow-lg">
-                </div>
-                <div class="md:w-2/3 md:pl-12">
-                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Halo, Saya Suro Hadi Wijoyo</h3>
-                    <p class="text-gray-600 mb-6">Saya seorang profesional di bidang digital dengan pengalaman lebih dari 5 tahun sebagai Content Creator, Digital Marketer, dan Fullstack Developer. Saya memiliki passion untuk menciptakan solusi digital yang membantu bisnis tumbuh dan mencapai tujuan mereka.</p>
-                    
-                    <div class="mb-8">
-                        <h4 class="text-xl font-bold text-gray-800 mb-4">Apa yang Saya Lakukan</h4>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <div class="flex items-start">
-                                <div class="bg-blue-100 p-3 rounded-full mr-4">
-                                    <i class="fas fa-code text-blue-600"></i>
-                                </div>
-                                <div>
-                                    <h5 class="font-bold text-gray-800">Web Development</h5>
-                                    <p class="text-gray-600 text-sm">Membangun website profesional dengan teknologi terkini.</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start">
-                                <div class="bg-blue-100 p-3 rounded-full mr-4">
-                                    <i class="fas fa-bullhorn text-blue-600"></i>
-                                </div>
-                                <div>
-                                    <h5 class="font-bold text-gray-800">Digital Marketing</h5>
-                                    <p class="text-gray-600 text-sm">Strategi pemasaran digital untuk meningkatkan penjualan.</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start">
-                                <div class="bg-blue-100 p-3 rounded-full mr-4">
-                                    <i class="fas fa-camera text-blue-600"></i>
-                                </div>
-                                <div>
-                                    <h5 class="font-bold text-gray-800">Content Creation</h5>
-                                    <p class="text-gray-600 text-sm">Konten kreatif untuk media sosial dan website.</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start">
-                                <div class="bg-blue-100 p-3 rounded-full mr-4">
-                                    <i class="fas fa-chart-line text-blue-600"></i>
-                                </div>
-                                <div>
-                                    <h5 class="font-bold text-gray-800">SEO Optimization</h5>
-                                    <p class="text-gray-600 text-sm">Optimasi website untuk peringkat lebih tinggi di Google.</p>
-                                </div>
-                            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimoni 1 -->
+                <div class="card-hover bg-gray-50 rounded-lg p-6 shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/200x200/1" alt="Klien 1" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Budi Santoso</h4>
+                            <p class="text-gray-600 text-sm">Pemilik Toko Baju</p>
                         </div>
                     </div>
-                    
-                    <a href="#contact" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium transition duration-300">Hubungi Saya</a>
+                    <p class="text-gray-700 mb-4">"Website yang dibuat sangat profesional dan harga terjangkau. Toko online saya langsung ramai pengunjung setelah launching!"</p>
+                    <div class="flex text-yellow-400">
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                    </div>
                 </div>
-            </div>
-            
-            <!-- Skills Section -->
-            <div class="mt-16">
-                <h3 class="text-2xl font-bold text-gray-800 mb-8 text-center">Keahlian Saya</h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div>
-                        <div class="mb-4">
-                            <div class="flex justify-between mb-1">
-                                <span class="font-medium text-gray-700">PHP</span>
-                                <span class="text-sm text-gray-600">90%</span>
-                            </div>
-                            <div class="w-full bg-gray-200 rounded-full h-2.5">
-                                <div class="bg-blue-600 h-2.5 rounded-full progress-bar" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <div class="flex justify-between mb-1">
-                                <span class="font-medium text-gray-700">Python</span>
-                                <span class="text-sm text-gray-600">85%</span>
-                            </div>
-                            <div class="w-full bg-gray-200 rounded-full h-2.5">
-                                <div class="bg-blue-600 h-2.5 rounded-full progress-bar" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <div class="flex justify-between mb-1">
-                                <span class="font-medium text-gray-700">JavaScript</span>
-                                <span class="text-sm text-gray-600">95%</span>
-                            </div>
-                            <div class="w-full bg-gray-200 rounded-full h-2.5">
-                                <div class="bg-blue-600 h-2.5 rounded-full progress-bar" style="width: 95%"></div>
-                            </div>
+
+                <!-- Testimoni 2 -->
+                <div class="card-hover bg-gray-50 rounded-lg p-6 shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/200x200/2" alt="Klien 2" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Siti Rahayu</h4>
+                            <p class="text-gray-600 text-sm">Pemilik Restoran</p>
                         </div>
                     </div>
-                    <div>
-                        <div class="mb-4">
-                            <div class="flex justify-between mb-1">
-                                <span class="font-medium text-gray-700">SQL</span>
-                                <span class="text-sm text-gray-600">88%</span>
+                    <p class="text-gray-700 mb-4">"Pelayanan sangat memuaskan, tim responsif dan cepat mengerjakan. Website restoran saya sekarang lebih profesional."</p>
+                    <div class="flex text-yellow-400">
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                </div>
+
+                <!-- Testimoni 3 -->
+                <div class="card-hover bg-gray-50 rounded-lg p-6 shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/200x200/3" alt="Klien 3" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Agus Setiawan</h4>
+                            <p class="text-gray-600 text-sm">Kepala Sekolah</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Website sekolah kami jadi lebih modern dan mudah diupdate. Terima kasih SH Wijoyo untuk hasil kerja yang memuaskan."</p>
+                    <div class="flex text-yellow-400">
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                        <i data-feather="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Kontak Section -->
+    <section id="kontak" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Hubungi Kami</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Konsultasikan kebutuhan website Anda dengan tim kami</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Nama Lengkap</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-gray-700 font-medium mb-2">Nomor Telepon</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Pesan</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+                        </div>
+                        <button type="submit" class="btn-hover w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-4 rounded-lg shadow-md">
+                            Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+                <div>
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-md">
+                        <h3 class="text-xl font-bold text-gray-800 mb-6">Informasi Kontak</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-indigo-100 p-2 rounded-full mr-4">
+                                    <i data-feather="mail" class="text-indigo-600 w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-700">Email</h4>
+                                    <p class="text-gray-600">sh.wijoyo@gmail.com</p>
+                                </div>
                             </div>
-                            <div class="w-full bg-gray-200 rounded-full h-2.5">
-                                <div class="bg-blue-600 h-2.5 rounded-full progress-bar" style="width: 88%"></div>
+                            <div class="flex items-start">
+                                <div class="bg-indigo-100 p-2 rounded-full mr-4">
+                                    <i data-feather="phone" class="text-indigo-600 w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-700">Telepon/WA</h4>
+                                    <p class="text-gray-600">+62 878 4838 5367</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-indigo-100 p-2 rounded-full mr-4">
+                                    <i data-feather="map-pin" class="text-indigo-600 w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-700">Alamat</h4>
+                                    <p class="text-gray-600">Jln Mawar desa Gintung RT 10 RW 02, kec. Comal, kab. Pemalang, Jawa Tengah. 52363</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="mb-4">
-                            <div class="flex justify-between mb-1">
-                                <span class="font-medium text-gray-700">Digital Marketing</span>
-                                <span class="text-sm text-gray-600">92%</span>
-                            </div>
-                            <div class="w-full bg-gray-200 rounded-full h-2.5">
-                                <div class="bg-blue-600 h-2.5 rounded-full progress-bar" style="width: 92%"></div>
-                            </div>
-                        </div>
-                        <div class="mb-4">
-                            <div class="flex justify-between mb-1">
-                                <span class="font-medium text-gray-700">Content Creation</span>
-                                <span class="text-sm text-gray-600">87%</span>
-                            </div>
-                            <div class="w-full bg-gray-200 rounded-full h-2.5">
-                                <div class="bg-blue-600 h-2.5 rounded-full progress-bar" style="width: 87%"></div>
-                            </div>
+                        <div class="mt-8">
+                            <h4 class="font-medium text-gray-700 mb-4">Jam Operasional</h4>
+                            <p class="text-gray-600">Senin - Jumat: 17.00 - 22.00 WIB</p>
+                            <p class="text-gray-600">Sabtu: 15.00 - 22.00 WIB</p>
+                            <p class="text-gray-600">Minggu: 08.00 - 22.00 WIB</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Services Section -->
-    <section id="services" class="py-16 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-800 mb-4">Layanan Saya</h2>
-                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Service 1 -->
-                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 card-hover">
-                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-code text-blue-600 text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Jasa Pembuatan Website</h3>
-                    <p class="text-gray-600 mb-4">Saya menawarkan jasa pembuatan website profesional dengan harga super murah. Mulai dari website company profile, toko online, hingga sistem informasi.</p>
-                    <div class="mb-4">
-                        <span class="text-2xl font-bold text-blue-600">Rp 1.5jt</span>
-                        <span class="text-gray-500 line-through ml-2">Rp 3jt</span>
-                    </div>
-                    <a href="#contact" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium transition duration-300">Pesan Sekarang</a>
+    <!-- Footer -->
+<footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">SH Wijoyo</h3>
+                    <p class="text-gray-400">Jasa pembuatan website profesional dengan harga terjangkau untuk bisnis dan personal.</p>
                 </div>
-                
-                <!-- Service 2 -->
-                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 card-hover">
-                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-bullhorn text-blue-600 text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Jasa Pemasaran Digital</h3>
-                    <p class="text-gray-600 mb-4">Optimasi SEO, iklan Google Ads, Facebook Ads, Instagram Ads, dan strategi pemasaran digital lainnya untuk meningkatkan penjualan bisnis Anda.</p>
-                    <div class="mb-4">
-                        <span class="text-2xl font-bold text-blue-600">Rp 1jt</span>
-                        <span class="text-gray-500 line-through ml-2">Rp 2.5jt</span>
-                    </div>
-                    <a href="#contact" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium transition duration-300">Pesan Sekarang</a>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Tautan Cepat</h4>
+                    <ul class="space-y-2">
+                        <li><a href="https://www.shwijoyo.com" class="text-gray-400 hover:text-white">Beranda</a></li>
+                        <li><a href="https://www.shwijoyo.com/layanan/" class="text-gray-400 hover:text-white">Layanan</a></li>
+                        <li><a href="https://www.shwijoyo.com/tentang/" class="text-gray-400 hover:text-white">Tentang kami</a></li>
+                        <li><a href="https://www.shwijoyo.com/portofolio/" class="text-gray-400 hover:text-white">Portofolio</a></li>
+                        <li><a href="https://www.shwijoyo.com/kontak/" class="text-gray-400 hover:text-white">Kontak</a></li>
+                    </ul>
                 </div>
-                
-                <!-- Service 3 -->
-                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 card-hover">
-                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-camera text-blue-600 text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Jasa Pembuatan Konten</h3>
-                    <p class="text-gray-600 mb-4">Konten kreatif untuk media sosial, website, dan platform digital lainnya. Foto produk, video promosi, artikel blog, dan konten menarik lainnya.</p>
-                    <div class="mb-4">
-                        <span class="text-2xl font-bold text-blue-600">Rp 500rb</span>
-                        <span class="text-gray-500 line-through ml-2">Rp 1.2jt</span>
-                    </div>
-                    <a href="#contact" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium transition duration-300">Pesan Sekarang</a>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Kontak Kami</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center">
+                            <i data-feather="mail" class="mr-2 w-4 h-4"></i>
+                            <span>sh.wijoyo@gmail.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="phone" class="mr-2 w-4 h-4"></i>
+                            <span>+62 878 4838 5367</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="map-pin" class="mr-2 w-4 h-4"></i>
+                            <span>Pemalang, Jawa tengah</span>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-        </div>
-    </section>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Sosial Media</h4>
+                    <div class="flex space-x-4">
+                        <a href="https://www.youtube.com/@shwijoyo" class="text-gray-400 hover:text-white">
+                            <i data-feather="youtube" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://www.instagram.com/shwijoyo/" class="text-gray-400 hover:text-white">
+                            <i data-feather="instagram" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@sh.wijoyo" class="text-gray-400 hover:text-white">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="main-grid-item-icon" fill="none">
+  <path d="M17.177 8.663a9.362 9.362 0 0 0 5.476 1.76V6.478c-.387 0-.772-.04-1.15-.121v3.104a9.363 9.363 0 0 1-5.477-1.759v8.048c0 4.026-3.252 7.289-7.263 7.289a7.21 7.21 0 0 1-4.043-1.233A7.228 7.228 0 0 0 9.913 24c4.011 0 7.264-3.263 7.264-7.29V8.664Zm1.418-3.978a5.505 5.505 0 0 1-1.418-3.218V.96h-1.09a5.521 5.521 0 0 0 2.508 3.725ZM7.257 18.718a3.328 3.328 0 0 1-.678-2.019 3.328 3.328 0 0 1 4.33-3.178V9.49a7.301 7.301 0 0 0-1.149-.067v3.138a3.328 3.328 0 0 0-4.33 3.178c0 1.302.743 2.43 1.827 2.979Z" fill="#FF004F" />
+  <path d="M16.026 7.703a9.364 9.364 0 0 0 5.477 1.759V6.358a5.493 5.493 0 0 1-2.908-1.673A5.522 5.522 0 0 1 16.087.96h-2.863v15.75a3.329 3.329 0 0 1-3.322 3.324 3.314 3.314 0 0 1-2.645-1.316 3.335 3.335 0 0 1-1.828-2.979 3.328 3.328 0 0 1 4.33-3.178V9.423c-3.94.082-7.11 3.313-7.11 7.288 0 1.984.79 3.782 2.071 5.096a7.21 7.21 0 0 0 4.043 1.233c4.012 0 7.263-3.264 7.263-7.29V7.704Z" fill="#000" />
+  <path d="M21.503 6.358v-.84a5.46 5.46 0 0 1-2.908-.833 5.487 5.487 0 0 0 2.908 1.673ZM16.087.96a5.611 5.611 0 0 1-.06-.453V0h-3.953v15.75a3.328 3.328 0 0 1-3.322 3.324 3.299 3.299 0 0 1-1.495-.356 3.314 3.314 0 0 0 2.645 1.316 3.329 3.329 0 0 0 3.322-3.323V.96h2.863ZM9.76 9.423V8.53a7.308 7.308 0 0 0-.996-.068c-4.012 0-7.264 3.263-7.264 7.289a7.289 7.289 0 0 0 3.22 6.056 7.278 7.278 0 0 1-2.07-5.096c0-3.974 3.17-7.206 7.11-7.288Z" fill="#00F2EA" />
+</svg>
 
-
-<!-- Footer -->
-    <footer class="bg-gray-800 text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Suro Hadi Wijoyo</h3>
-                    <p class="text-gray-400">Content Creator, Digital Marketer & Fullstack Developer dengan pengalaman lebih dari 5 tahun membantu bisnis tumbuh melalui solusi digital.</p>
-                </div>
-                
-                <div>
-                    <h4 class="text-lg font-bold mb-4">Tautan Cepat</h4>
-                    <ul class="space-y-2">
-                        <li><a href="https://www.shwijoyo.com" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
-                        <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300">Tentang</a></li>
-                        <li><a href="#services" class="text-gray-400 hover:text-white transition duration-300">Layanan</a></li>
-                        <li><a href="#portfolio" class="text-gray-400 hover:text-white transition duration-300">Portfolio</a></li>
-                        <li><a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Kontak</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="text-lg font-bold mb-4">Layanan</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#services" class="text-gray-400 hover:text-white transition duration-300">Pembuatan Website</a></li>
-                        <li><a href="#services" class="text-gray-400 hover:text-white transition duration-300">Digital Marketing</a></li>
-                        <li><a href="#services" class="text-gray-400 hover:text-white transition duration-300">Pembuatan Konten</a></li>
-                        <li><a href="#services" class="text-gray-400 hover:text-white transition duration-300">SEO Optimization</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="text-lg font-bold mb-4">Kontak</h4>
-                    <ul class="space-y-2">
-                        <li class="flex items-center">
-                            <i class="fas fa-map-marker-alt mr-2 text-gray-400"></i>
-                            <span class="text-gray-400">Jl. Digital No. 123, Bandung</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-envelope mr-2 text-gray-400"></i>
-                            <span class="text-gray-400">surohadi@example.com</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-phone mr-2 text-gray-400"></i>
-                            <span class="text-gray-400">+62 812 3456 7890</span>
-                        </li>
-                    </ul>
+                        </a>
+                    </div>
                 </div>
             </div>
-            
-            <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-400 mb-4 md:mb-0">© 2023 Suro Hadi Wijoyo. All rights reserved.</p>
-                <div class="flex space-x-6">
-                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 SH Wijoyo. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <script>
-        // Mobile menu toggle
-        document.getElementById('mobile-menu-button').addEventListener('click', function() {
-            const menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
+        feather.replace();
+        document.getElementById('hamburger').addEventListener('click', function() {
+            this.classList.toggle('hamburger-active');
+            document.getElementById('mobileMenu').classList.toggle('hidden');
         });
-</script>
-        
+    </script>
 </body>
 </html>

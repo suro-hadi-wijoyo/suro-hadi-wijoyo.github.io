@@ -1,12 +1,12 @@
 {
-    "name": "Website Personal SH Wijoyo",
+    "name": "SH Wijoyo - Jasa Pembuatan Website Super Murah",
     "short_name": "SH Wijoyo",
     "start_url": "https://www.shwijoyo.com",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#0d6efd",
     "orientation": "portrait",
-    "description": "Website personal dan jasa pembuatan website murah berkualitas.",
+    "description": "Jasa pembuatan website profesional dengan harga terjangkau untuk bisnis dan personal.",
     "lang": "id",
     "scope": "/",
     "icons": [
