@@ -256,5 +256,20 @@
             document.getElementById('mobileMenu').classList.toggle('hidden');
         });
     </script>
+    
+    <!-- Google Analytics 4 (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QGQ9C0Z661"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  // Ganti dengan Measurement ID-mu
+  gtag('config', 'G-QGQ9C0Z661', {
+    // contoh opsi tambahan:
+    // send_page_view: true,     // default true; set false jika kamu kirim page_view manual
+    // allow_ad_personalization_signals: false
+  });
+</script>
 </body>
 </html>
